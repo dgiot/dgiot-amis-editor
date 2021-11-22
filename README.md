@@ -37,13 +37,13 @@ yarn add @dgiot/dgiot-amis-editor
 
 ## Quick Start
 
-### [main.js](https://github.com/dgiot/dgiot-amis-editor/blob/master/src/main.js)
+### [main.js](https://github.com/dgiot/dgiot-amis-editor/blob/master/examples/main.js#L3)
 ```javascript
   import DgiotAmisEditor from '@dgiot/dgiot-amis-editor'
   Vue.use(DgiotAmisEditor)
 ```
 
-### [examples.vue](https://github.com/dgiot/dgiot-amis-editor/blob/master/src/App.vue)
+### [examples.vue](https://github.com/dgiot/dgiot-amis-editor/blob/master/examples/App.vue#L11)
   ```vue
     <dgiot-amis-editor
       theme="ang"

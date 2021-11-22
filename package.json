@@ -1,16 +1,16 @@
 {
   "name": "@dgiot/dgiot-amis-editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "license": "Mozilla Public License Version 2.0",
   "author": "h7ml <h7ml@qq.com>",
-  "main": "dist/dgiot-amis-editor.common.js",
-  "module": "dist/dgiot-amis-editor.common.js",
-  "browser": "dist/dgiot-amis-editor.common.js",
-  "unpkg": "dist/dgiot-amis-editor.common.js",
+  "main": "dist/dgiot-amis-editor.umd.js",
+  "module": "dist/dgiot-amis-editor.umd.js",
+  "browser": "dist/dgiot-amis-editor.umd.js",
+  "unpkg": "dist/dgiot-amis-editor.umd.js",
   "jsdelivr": "dist/dgiot-amis-editor.common.js.js",
   "files": [
-    "dist/dgiot-amis-editor.umd.js", "dist/dgiot-amis-editor.html", "dist/dgiot-amis-editor.css"
+    "dist/*"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
