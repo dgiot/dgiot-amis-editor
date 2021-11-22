@@ -1,0 +1,69 @@
+{
+  "name": "@dgiot/dgiot-amis-editor",
+  "version": "1.0.0",
+  "private": false,
+  "license": "Mozilla Public License Version 2.0",
+  "author": "h7ml <h7ml@qq.com>",
+  "main": "dist/dgiot-amis-editor.common.js",
+  "module": "dist/dgiot-amis-editor.common.js",
+  "browser": "dist/dgiot-amis-editor.common.js",
+  "unpkg": "dist/dgiot-amis-editor.common.js",
+  "jsdelivr": "dist/dgiot-amis-editor.common.js.js",
+  "files": [
+    "dist/dgiot-amis-editor.umd.js", "dist/dgiot-amis-editor.html", "dist/dgiot-amis-editor.css"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "distribute": "vue-cli-service build --target lib --name dgiot-amis-editor --dest dist packages/index.js"
+  },
+  "dependencies": {
+    "amis": "^1.4.1",
+    "amis-editor": "^3.3.11",
+    "axios": "^0.24.0",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vuera": "^0.2.7"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.14",
+    "@vue/cli-plugin-eslint": "^4.5.14",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "@vue/cli-service": "~4.5.0",
+    "prettier": "2.4.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-vue": "8.0.3",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "homepage": "https://dgiot-amis-editor.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgiot/dgiot-amis-editor.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint"
+    ]
+  },
+  "engines": {
+    "node": ">= 12.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

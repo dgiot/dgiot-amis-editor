@@ -1,0 +1,31 @@
+<meta charset="utf-8" />
+<title>amisEditor demo</title>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<link rel="stylesheet" href="../dist/dgiot-amis-editor.css" />
+
+<div id="app">
+  <dgiot-amis-editor
+    theme="cxd"
+    className="is-fixed"
+    :preview="isPreview"
+    :isMobile="isMobile"
+    :value="schema"
+  ></dgiot-amis-editor>
+</div>
+
+<script></script>
+<script src="../dist/dgiot-amis-editor.umd.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: function () {
+      return {
+        isPreview: false,
+        isMobile: false,
+        schema: {},
+      }
+    },
+  })
+</script>
